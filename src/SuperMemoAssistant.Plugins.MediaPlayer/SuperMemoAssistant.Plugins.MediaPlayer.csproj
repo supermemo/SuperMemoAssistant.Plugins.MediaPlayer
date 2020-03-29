@@ -71,7 +71,6 @@
       <Version>3.0.0</Version>
     </PackageReference>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /h /i /c /k /e /r /y "$(TargetDir)*" "%25UserProfile%25\Documents\SuperMemoAssistant\Plugins\Development\$(ProjectName)"</PostBuildEvent>
   </PropertyGroup>
